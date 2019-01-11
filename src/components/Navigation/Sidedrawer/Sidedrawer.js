@@ -6,7 +6,9 @@ import NavItems from '../NavItems/NavItems';
 
 const sidedrawer = (props) => (
     <div className={classes.Sidedrawer}>
-        <Logo height="11%"></Logo>
+        <div class={classes.Logo}>
+            <Logo></Logo>
+        </div>
         <nav>
             <NavItems></NavItems>
         </nav>
