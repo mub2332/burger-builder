@@ -4,6 +4,7 @@ import Aux from '../../../hoc/AuxWrap';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = (props) => {
+
     const ingredientSummary = Object.keys(props.ingredients)
         .map(key => {
             return <li key={key}>
@@ -14,6 +15,7 @@ const orderSummary = (props) => {
                 : {props.ingredients[key]}
             </li>
         });
+        
     return (
         <Aux>
             <h3>Your Order</h3>
